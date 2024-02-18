@@ -3,5 +3,30 @@
 body {
   font-family: "Roboto Mono", monospace;
   font-size: 1rem;
-  line-height: 24px;
+}
+
+/*====================
+Common CSS
+======================*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline:none;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
 }
