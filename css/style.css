@@ -63,6 +63,12 @@ Common CSS
   color: #181818;
   font-size: 2rem;
 }
+.section__title--resume, .section__title--experience {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #FD6E0A;
+  border-radius: 5px 5px 0 0;
+}
 .section__description {
   color: #757575;
   font-size: 1rem;
@@ -191,6 +197,49 @@ Common CSS
 }
 .services__description {
   color: #757575;
+}
+
+.resume {
+  margin: 5rem 0;
+}
+.resume__info {
+  display: flex;
+  justify-content: space-around;
+  gap: 2.5rem;
+}
+.resume__education, .resume__experience {
+  box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.resume__infoItem {
+  padding: 1rem;
+  border-left: 1px dashed #FD6E0A;
+  border-right: 1px dashed #FD6E0A;
+  border-bottom: 1px dashed #757575;
+}
+.resume__infoItem:hover {
+  background-color: #FFF8F3;
+}
+.resume__infoItem:last-child {
+  border-bottom: 1px dashed #FD6E0A;
+  border-radius: 5px;
+}
+.resume__title {
+  color: #474747;
+}
+.resume__subTitle {
+  margin: 1rem 0;
+  font-weight: 500;
+  color: #757575;
+}
+.resume__description {
+  color: #757575;
+  font-size: 0.9rem;
+}
+.resume__btn {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

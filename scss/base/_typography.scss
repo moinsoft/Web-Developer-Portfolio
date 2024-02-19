@@ -68,6 +68,13 @@ Common CSS
   &__title{
     color: $titleFontColor;
     font-size: 2rem;
+
+    &--resume,&--experience{
+      text-align: center;
+      padding: 1rem 0;
+      background-color: $primaryColor;
+      border-radius: 5px 5px 0 0;
+    }
   }
 
   &__description{

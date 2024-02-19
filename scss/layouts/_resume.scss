@@ -1,0 +1,55 @@
+@import '../base/variable';
+
+.resume{
+    margin: 5rem 0;
+    
+    &__info{
+        display: flex;
+        justify-content: space-around;
+        gap: 2.5rem;
+    }
+
+    &__education,&__experience{
+        box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+
+    &__infoItem{
+        padding: 1rem;
+        border-left: 1px dashed $primaryColor;
+        border-right: 1px dashed $primaryColor;
+        border-bottom: 1px dashed $primaryFontColor;
+
+
+        &:hover{
+            background-color: $bgColor;
+        }
+
+        &:last-child{
+            border-bottom: 1px dashed $primaryColor;
+            border-radius: 5px;
+        }
+    }
+
+    &__title{
+        color: $subTitleFontColor;
+    }
+
+    &__subTitle{
+        margin: 1rem 0;
+        font-weight: 500;
+        color: $primaryFontColor;
+    }
+    
+    &__description{
+        color: $primaryFontColor;
+        font-size: .90rem;
+    }
+
+    &__btn{
+        margin-top: 4rem;
+        display: flex;
+        justify-content: center;
+    }
+
+}
