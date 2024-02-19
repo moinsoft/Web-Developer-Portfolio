@@ -56,6 +56,19 @@ Common CSS
   color: white;
 }
 
+.section {
+  text-align: center;
+}
+.section__title {
+  color: #181818;
+  font-size: 2rem;
+}
+.section__description {
+  color: #757575;
+  font-size: 1rem;
+  padding: 2rem 0;
+}
+
 .header {
   background-color: #FFF8F3;
   background-repeat: no-repeat;
@@ -131,6 +144,28 @@ Common CSS
 .banner__img {
   width: 33rem;
   vertical-align: middle;
+}
+
+.about {
+  margin: 5rem 0;
+}
+.about__content {
+  background-color: #FFF8F3;
+  border-radius: 5px;
+  padding: 3rem 5rem;
+}
+.about__info {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.about__title {
+  color: #757575;
+  margin-bottom: 1rem;
+}
+.about__description {
+  color: #474747;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */

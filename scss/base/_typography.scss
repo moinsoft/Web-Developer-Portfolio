@@ -56,8 +56,23 @@ Common CSS
   cursor: pointer;
   transition: all 0.3s linear;
   
-   &.btn-box{
-     background-color: $primaryColor;
-     color: white;
-   }
+  &.btn-box{
+    background-color: $primaryColor;
+    color: white;
+  }
+}
+
+.section{
+  text-align: center;
+
+  &__title{
+    color: $titleFontColor;
+    font-size: 2rem;
+  }
+
+  &__description{
+    color: $primaryFontColor;
+    font-size: 1rem;
+    padding: 2rem 0;
+  }
 }

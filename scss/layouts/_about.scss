@@ -1,0 +1,29 @@
+@import '../base/variable';
+
+.about{
+    margin: 5rem 0;
+    
+
+    &__content{
+        background-color: $bgColor;
+        border-radius: 5px;
+        padding: 3rem 5rem;
+    }
+
+    &__info{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    &__title{
+        color: $primaryFontColor;
+        margin-bottom: 1rem;
+    }
+
+    &__description{
+        color: $subTitleFontColor;
+        font-weight: 500;
+    }
+
+}
