@@ -5,7 +5,7 @@ body {
 }
 
 /*====================
-Common CSS
+Reset CSS
 ======================*/
 *,
 *::before,
@@ -19,6 +19,7 @@ Common CSS
 a {
   text-decoration: none;
   transition: all 0.3s linear;
+  color: #474747;
 }
 
 img {
@@ -27,6 +28,71 @@ img {
 
 ul {
   list-style: none;
+}
+
+/*====================
+Common CSS
+======================*/
+.container {
+  max-width: 100rem;
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.btn {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #474747;
+  border: 1px solid #FD6E0A;
+  padding: 0.75rem 2rem;
+  border-radius: 5px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.btn.btn-box {
+  background-color: #FD6E0A;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__logoLink {
+  color: #181818;
+  font-size: 2rem;
+  font-weight: 800;
+}
+.navbar__logoOrange {
+  color: #FD6E0A;
+}
+.navbar__navList {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.navbar__navLink {
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+.navbar__navLink::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: #FD6E0A;
+  transition: all 0.3s linear;
+}
+.navbar__navLink:hover, .navbar__navLink:focus, .navbar__navLink:active {
+  color: #FD6E0A;
+}
+.navbar__navLink:hover::after, .navbar__navLink:focus::after, .navbar__navLink:active::after {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

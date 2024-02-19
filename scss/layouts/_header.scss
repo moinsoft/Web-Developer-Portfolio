@@ -1,0 +1,49 @@
+@import '../base/variable';
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    &__logoLink{
+        color: $titleFontColor;
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+    &__logoOrange{
+        color: $primaryColor;
+    }
+
+    &__navList{
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    &__navLink{
+        position: relative;
+        padding-bottom: .75rem;
+
+        &::after{
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            left: 0;
+            bottom: 0;
+            background-color: $primaryColor;
+            transition: all 0.3s linear;
+        }
+
+        &:hover,&:focus,&:active{
+            color: $primaryColor;
+            
+            &::after{
+                width: 100%;
+            }
+        }
+    }
+
+}
