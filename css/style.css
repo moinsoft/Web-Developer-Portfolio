@@ -58,31 +58,35 @@ Common CSS
 
 .header {
   background-color: #FFF8F3;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 40rem;
 }
-.header .navbar {
+
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
 }
-.header .navbar__logoLink {
+.navbar__logoLink {
   color: #181818;
   font-size: 2rem;
   font-weight: 800;
 }
-.header .navbar__logoOrange {
+.navbar__logoOrange {
   color: #FD6E0A;
 }
-.header .navbar__menu {
+.navbar__menu {
   display: flex;
   align-items: center;
   gap: 1.5rem;
 }
-.header .navbar__link {
+.navbar__link {
   position: relative;
   padding-bottom: 0.75rem;
 }
-.header .navbar__link::after {
+.navbar__link::after {
   content: "";
   position: absolute;
   width: 0;
@@ -92,11 +96,41 @@ Common CSS
   background-color: #FD6E0A;
   transition: all 0.3s linear;
 }
-.header .navbar__link:hover, .header .navbar__link:focus, .header .navbar__link:active {
+.navbar__link:hover, .navbar__link:focus, .navbar__link:active {
   color: #FD6E0A;
 }
-.header .navbar__link:hover::after, .header .navbar__link:focus::after, .header .navbar__link:active::after {
+.navbar__link:hover::after, .navbar__link:focus::after, .navbar__link:active::after {
   width: 100%;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 4rem;
+}
+.banner__content {
+  max-width: 50rem;
+}
+.banner__subtitle {
+  color: #474747;
+  font-size: 2.5rem;
+  font-weight: 400;
+  padding-bottom: 2rem;
+}
+.banner__title {
+  color: #181818;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.banner__description {
+  color: #757575;
+  font-size: 1rem;
+  padding: 2rem 0;
+}
+.banner__img {
+  width: 33rem;
+  vertical-align: middle;
 }
 
 /*# sourceMappingURL=style.css.map */

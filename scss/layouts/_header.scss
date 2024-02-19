@@ -2,53 +2,91 @@
 
 .header{
     background-color: $bgColor;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 40rem;
+}
 
-    .navbar{
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    
+
+    &__logoLink{
+        color: $titleFontColor;
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+    &__logoOrange{
+        color: $primaryColor;
+    }
+
+    &__menu{
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        padding: 1rem 0;
-        
-    
-        &__logoLink{
-            color: $titleFontColor;
-            font-size: 2rem;
-            font-weight: 800;
+        gap: 1.5rem;
+    }
+
+    &__link{
+        position: relative;
+        padding-bottom: .75rem;
+
+        &::after{
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            left: 0;
+            bottom: 0;
+            background-color: $primaryColor;
+            transition: all 0.3s linear;
         }
-    
-        &__logoOrange{
+
+        &:hover,&:focus,&:active{
             color: $primaryColor;
-        }
-    
-        &__menu{
-            display: flex;
-            align-items: center;
-            gap: 1.5rem;
-        }
-    
-        &__link{
-            position: relative;
-            padding-bottom: .75rem;
-    
+
             &::after{
-                content: "";
-                position: absolute;
-                width: 0;
-                height: 2px;
-                left: 0;
-                bottom: 0;
-                background-color: $primaryColor;
-                transition: all 0.3s linear;
-            }
-    
-            &:hover,&:focus,&:active{
-                color: $primaryColor;
-    
-                &::after{
-                    width: 100%;
-                }
+                width: 100%;
             }
         }
-    
+    }
+
+}
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4rem;
+
+    &__content{
+        max-width: 50rem;
+    }
+
+    &__subtitle{
+        color: $subTitleFontColor;
+        font-size: 2.5rem;
+        font-weight: 400;
+        padding-bottom: 2rem;
+    }
+
+    &__title{
+        color: $titleFontColor;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    &__description{
+        color: $primaryFontColor;
+        font-size: 1rem;
+        padding: 2rem 0;
+    }
+
+    &__img{
+        width: 33rem;
+        vertical-align: middle;
     }
 }
