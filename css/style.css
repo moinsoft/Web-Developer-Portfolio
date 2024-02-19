@@ -36,7 +36,7 @@ Common CSS
 .container {
   max-width: 100rem;
   width: 80%;
-  margin: 1rem auto;
+  margin: 0 auto;
 }
 
 .btn {
@@ -56,29 +56,33 @@ Common CSS
   color: white;
 }
 
-.navbar {
+.header {
+  background-color: #FFF8F3;
+}
+.header .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 0;
 }
-.navbar__logoLink {
+.header .navbar__logoLink {
   color: #181818;
   font-size: 2rem;
   font-weight: 800;
 }
-.navbar__logoOrange {
+.header .navbar__logoOrange {
   color: #FD6E0A;
 }
-.navbar__navList {
+.header .navbar__menu {
   display: flex;
   align-items: center;
   gap: 1.5rem;
 }
-.navbar__navLink {
+.header .navbar__link {
   position: relative;
   padding-bottom: 0.75rem;
 }
-.navbar__navLink::after {
+.header .navbar__link::after {
   content: "";
   position: absolute;
   width: 0;
@@ -88,10 +92,10 @@ Common CSS
   background-color: #FD6E0A;
   transition: all 0.3s linear;
 }
-.navbar__navLink:hover, .navbar__navLink:focus, .navbar__navLink:active {
+.header .navbar__link:hover, .header .navbar__link:focus, .header .navbar__link:active {
   color: #FD6E0A;
 }
-.navbar__navLink:hover::after, .navbar__navLink:focus::after, .navbar__navLink:active::after {
+.header .navbar__link:hover::after, .header .navbar__link:focus::after, .header .navbar__link:active::after {
   width: 100%;
 }
 

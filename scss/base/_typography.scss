@@ -40,7 +40,7 @@ Common CSS
 .container {
   max-width: 100rem;
   width: 80%;
-  margin: 1rem auto;
+  margin: 0 auto;
 }
 
 
@@ -55,8 +55,6 @@ Common CSS
   text-transform: capitalize;
   cursor: pointer;
   transition: all 0.3s linear;
-  
-  
   
    &.btn-box{
      background-color: $primaryColor;
