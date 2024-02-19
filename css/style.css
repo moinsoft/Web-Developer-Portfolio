@@ -168,4 +168,29 @@ Common CSS
   font-weight: 500;
 }
 
+.services {
+  margin: 5rem 0;
+}
+.services__info {
+  display: flex;
+  justify-content: space-around;
+  gap: 2.5rem;
+}
+.services__infoItem {
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.services__infoItem:hover {
+  background-color: #FFF8F3;
+}
+.services__title {
+  color: #474747;
+  margin: 1rem 0;
+}
+.services__description {
+  color: #757575;
+}
+
 /*# sourceMappingURL=style.css.map */
