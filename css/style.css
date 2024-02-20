@@ -78,8 +78,8 @@ Common CSS
 .header {
   background-color: #FFF8F3;
   background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: 40rem;
+  background-position: bottom right, left top;
+  background-size: 40rem, contain;
 }
 
 .navbar {
@@ -277,7 +277,7 @@ Common CSS
 }
 
 .footer {
-  padding: 5rem 0;
+  padding: 2rem 0;
   background-color: #FD6E0A;
 }
 .footer__description {

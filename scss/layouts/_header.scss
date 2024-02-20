@@ -3,8 +3,8 @@
 .header{
     background-color: $bgColor;
     background-repeat: no-repeat;
-    background-position: bottom right;
-    background-size: 40rem;
+    background-position: bottom right, left top;
+    background-size: 40rem, contain;
 }
 
 .navbar{
