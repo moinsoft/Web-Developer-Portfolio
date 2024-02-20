@@ -243,7 +243,6 @@ Common CSS
 }
 
 .contact {
-  margin: 5rem 0;
   padding: 5rem 0;
   background-color: #FFF8F3;
 }
@@ -275,6 +274,24 @@ Common CSS
   border-radius: 5px;
   background-color: #ffffff;
   margin-bottom: 1rem;
+}
+
+.footer {
+  padding: 5rem 0;
+  background-color: #FD6E0A;
+}
+.footer__description {
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+}
+.footer__link {
+  color: #ffffff;
+  transition: all 0.3s linear;
+}
+.footer__link:hover {
+  color: blue;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */

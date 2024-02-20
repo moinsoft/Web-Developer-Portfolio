@@ -1,0 +1,23 @@
+@import '../base/variable';
+
+.footer{
+    padding: 5rem 0;
+    background-color: $primaryColor;
+    
+    &__description{
+        font-weight: 500;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    &__link{
+        color: #ffffff;
+        transition: all 0.3s linear;
+
+        &:hover{
+            color: blue;
+            text-decoration: underline;
+        }
+    }
+
+}
