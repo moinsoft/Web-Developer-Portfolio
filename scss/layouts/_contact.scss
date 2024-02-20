@@ -1,0 +1,44 @@
+@import '../base/variable';
+
+.contact{
+    margin: 5rem 0;
+    padding: 5rem 0;
+    background-color: $bgColor;
+    
+    &__content{
+        display: flex;
+        justify-content: space-around;
+        gap: 2.5rem;
+    }
+
+    &__left{
+        width: 50%;
+    }
+
+    &__right{
+        width: 50%;
+
+        .section__title{
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__img{
+        margin-right: 2rem;
+        transition: all 0.3s linear;
+
+        &:hover{
+            transform: rotate(360deg);
+        }
+    }
+
+    &__input{
+        width: 100%;
+        padding: 1rem;
+        border: 1px solid $primaryColor;
+        border-radius: 5px;
+        background-color: #ffffff;
+        margin-bottom: 1rem;
+    }
+
+}

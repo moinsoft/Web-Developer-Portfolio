@@ -242,4 +242,39 @@ Common CSS
   justify-content: center;
 }
 
+.contact {
+  margin: 5rem 0;
+  padding: 5rem 0;
+  background-color: #FFF8F3;
+}
+.contact__content {
+  display: flex;
+  justify-content: space-around;
+  gap: 2.5rem;
+}
+.contact__left {
+  width: 50%;
+}
+.contact__right {
+  width: 50%;
+}
+.contact__right .section__title {
+  margin-bottom: 2rem;
+}
+.contact__img {
+  margin-right: 2rem;
+  transition: all 0.3s linear;
+}
+.contact__img:hover {
+  transform: rotate(360deg);
+}
+.contact__input {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #FD6E0A;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin-bottom: 1rem;
+}
+
 /*# sourceMappingURL=style.css.map */
